@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: url(font/Montserrat/Montserrat-VariableFont_wght.ttf);
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -91,10 +91,10 @@ main{
     font-weight: bold;
     color: white;
 }
-.two, .three{
+.two, .three, .four{
     padding: 40px;
 }
-.two_main, .three_main{
+.two_main, .three_main, .four_main{
     max-width: 1050px;
     display: flex;
     flex-direction: column;
@@ -108,10 +108,16 @@ main{
     margin-top: 40px;
     margin-bottom: 30px;
 }
-.two_main div:nth-child(2) p{
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.two_main div:nth-child(2) p, .four_main .four_text p{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight:100;
+}
+.four_text2{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-weight:100;
 }
 .three_h1{
@@ -120,20 +126,29 @@ main{
     margin-top: 10px;
     margin-bottom: 10px;  
 }
-
 .three_red_p{
     font-size: 20px;
     color: red;
     margin: 5px 0  ;
 }
 .three_main div:nth-child(3) p, .three_main div:nth-child(6) p{
-    margin: 3px 3px;
-    font-size: 20px;
+    margin: 10px 3px;
+    font-size: 25px;
     text-align: center;
 }
 .three_main div:nth-child(5){
     margin-top: 50px;
 }
+.four_main .h1{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+}
+
+
+
+
 
 @media (max-width:1300px) {
     div.header_one_container{
