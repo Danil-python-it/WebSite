@@ -201,9 +201,15 @@ footer.footer_main{
     .f_two{
         flex-direction: column;
     }
+    .one_main{
+        font-size: 45px;
+    }
 }
 @media (max-width:425px) {
     .f_one{
         flex-direction: column;
+    }
+    .one_main{
+        font-size: 30px;
     }
 }
