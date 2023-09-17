@@ -1,9 +1,30 @@
 //load container for image and button, next, last
-let ctn_images = document.getElementsByClassName("images")[0];
+const ctn_images = document.getElementsByClassName("images")[0];
 var position = 0;
 var width = window.getComputedStyle(ctn_images).width;
 var max_position = parseInt(width.charAt(0) + width.charAt(1) + width.charAt(2) + width.charAt(3));
 var dist = max_position/5;
+var x_start = null;
+
+function touchstart(event){
+    x_start = event.clientX
+    console.log(event.clientX);
+}
+function touchmove(event){
+
+}
+function touchend(event){
+    x_end = event.clientX
+    if(x_end < x_start){
+        console.log("left");
+        move_left()
+    }
+    else if(x_end > x_start){
+        console.log("right");
+        move_right()
+    }
+    
+}
 
 function SetIndicator(){
     let indicators = document.querySelectorAll(".container_indicator");
@@ -37,4 +58,4 @@ function move_right(){
 
 
 
-let timerID = setInterval(() => move_right(), 3000);
+let timerID = setInterval(() => move_right(), 10000);
